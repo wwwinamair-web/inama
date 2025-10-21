@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Support the Decentralized Library of Censored & Forgotten Knowledge ó powered by open-source AI, preserved forever on blockchain.">
+  <title>Archive of Truth ó A Free, Uncensorable Library for Humanity</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.7;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      color: #222;
+      background: #fff;
+    }
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 16px;
+      color: #1a1a1a;
+    }
+    p, ul {
+      font-size: 1.05rem;
+      margin-bottom: 18px;
+    }
+    ul {
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 600px;
+    }
+    .wallets {
+      margin: 35px 0;
+    }
+    .wallet {
+      background: #f8f9fa;
+      border-radius: 10px;
+      padding: 16px;
+      margin: 14px 0;
+      font-family: monospace;
+      font-size: 0.95rem;
+      text-align: left;
+    }
+    .wallet strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #000;
+    }
+    .wallet code {
+      word-break: break-all;
+    }
+    button {
+      background: #0d6efd;
+      color: white;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      margin-top: 8px;
+    }
+    button:hover {
+      background: #0b5ed7;
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 1.9rem; }
+      body { padding: 20px 15px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Archive of Truth</h1>
+  <p>A free, uncensorable, AI-powered library preserving censored and forgotten knowledge ó for everyone, forever.</p>
+
+  <p>Governments erase history. Corporations suppress health data. Media narrows the narrative. We restore whatís been hidden ó not as opinion, but as <strong>verifiable evidence</strong>.</p>
+
+  <p>This archive includes:</p>
+  <ul>
+    <li>Declassified documents on political interventions & covert operations</li>
+    <li>Peer-reviewed medical studies ignored due to industry pressure</li>
+    <li>Public health data withheld from citizens (air/water quality, drug side effects)</li>
+    <li>Historical records removed from school textbooks worldwide</li>
+  </ul>
+  <p>All content is sourced from <strong>public archives</strong> (CIA FOIA, WHO, NIH, UN, Archive.org) ó never from unverified claims.</p>
+
+  <h2>Why does this require funding?</h2>
+  <p>We donít just store knowledge ó we make it <strong>accessible, understandable, and resilient</strong> using open-source AI:</p>
+  <ul>
+    <li>?? <strong>AI-powered translation</strong> into 100+ languages ó including rare & indigenous ones</li>
+    <li>?? <strong>Smart summarization</strong> of 100-page reports into 30-second insights</li>
+    <li>?? <strong>Private Q&A</strong> ó ask questions and get answers only from archived, verified sources</li>
+    <li>?? <strong>Offline-first apps</strong> for low-connectivity regions (works without internet)</li>
+  </ul>
+  <p>These processes run on <strong>open-source models</strong> (Llama, Mistral, NLLB) ó no commercial APIs. Your support covers decentralized storage (Arweave/IPFS) and ethical AI compute.</p>
+
+  <h2>We guarantee:</h2>
+  <ul>
+    <li>? <strong>No user data is ever stored or tracked</strong></li>
+    <li>? <strong>All code is open-source</strong> (GitHub)</li>
+    <li>? <strong>Monthly public expense reports</strong></li>
+    <li>? <strong>Zero personal use</strong> ó 100% funds go to the archive</li>
+  </ul>
+
+  <div class="wallets">
+    <div class="wallet">
+      <strong>Bitcoin (BTC)</strong><br>
+      <code id="btc">bc1p3alrq5j3cehha52dxqph26c2xf8vqr9cdz77znawcttsrx5kgt6q77ufzh</code><br>
+      <button onclick="copy('btc')">Copy Address</button>
+    </div>
+    <div class="wallet">
+      <strong>Ethereum (ETH)</strong><br>
+      <code id="eth">0xa81b24dB2787a8321F8c488c23Af3EdB40911653</code><br>
+      <button onclick="copy('eth')">Copy Address</button>
+    </div>
+    <div class="wallet">
+      <strong>USDT (TRC20 on Tron)</strong><br>
+      <code id="usdt">TRNcw4CNSDRQhFXEYt5VknH674RxPtBaHb</code><br>
+      <button onclick="copy('usdt')">Copy Address</button>
+    </div>
+    <div class="wallet">
+      <strong>Tron (TRX)</strong><br>
+      <code id="trx">TRNcw4CNSDRQhFXEYt5VknH674RxPtBaHb</code><br>
+      <button onclick="copy('trx')">Copy Address</button>
+    </div>
+  </div>
+
+  <footer>
+    <p><em>This is a gift to humanity. No rewards, no returns ó only legacy.</em></p>
+    <p>Because the right to know is a human right.</p>
+  </footer>
+
+  <script>
+  function copy(id) {
+    const el = document.getElementById(id);
+    const text = el.innerText || el.textContent;
+
+    // —Ê‘ ÃœÌœ („—Ê—ê—Â«Ì „œ—‰)
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = el.nextElementSibling;
+        const original = btn.innerText;
+        btn.innerText = ' „ «·‰”Œ!';
+        setTimeout(() => btn.innerText = original, 1500);
+      }).catch(() => fallbackCopy(text, el));
+    } else {
+      // —Ê‘ ﬁœÌ„Ì (»—«Ì „—Ê—ê—Â«Ì ﬁœÌ„Ì)
+      fallbackCopy(text, el);
+    }
+  }
+
+  function fallbackCopy(text, el) {
+    const textArea = document.createElement("textarea");
+    textArea.value = text;
+    textArea.style.position = "fixed";
+    textArea.style.left = "-999999px";
+    textArea.style.top = "-999999px";
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    try {
+      const successful = document.execCommand('copy');
+      const btn = el.nextElementSibling;
+      btn.innerText = successful ? ' „ «·‰”Œ!' : '›‘· «·‰”Œ';
+      setTimeout(() => btn.innerText = '‰”Œ «·⁄‰Ê«‰', 1500);
+    } catch (err) {
+      const btn = el.nextElementSibling;
+      btn.innerText = '›‘· «·‰”Œ';
+      setTimeout(() => btn.innerText = '‰”Œ «·⁄‰Ê«‰', 1500);
+    }
+    document.body.removeChild(textArea);
+  }
+</script>
+</body>
+</html>
