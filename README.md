@@ -33,7 +33,7 @@ This is a gift to humanity — not a business.
 If you believe knowledge should never be erased, you can help:
 
 - **Donate crypto**:  
-  [View wallet addresses](https://your-username.github.io/your-repo-name)
+  [View wallet addresses](https://wwwinamair-web.github.io/inama/)
 
 - **Contribute code or translations**:  
   Fork this repo and submit a PR
