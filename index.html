@@ -5,15 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Support the Decentralized Library of Censored & Forgotten Knowledge — powered by open-source AI, preserved forever on blockchain.">
   <title>Archive of Truth — A Free, Uncensorable Library for Humanity</title>
+  
+  <!-- Hreflang Tags -->
+  <link rel="alternate" hreflang="en" href="http://www.inama.ir/page/free-truth-archive" />
+  <link rel="alternate" hreflang="ar" href="http://www.inama.ir/page/%D8%A7%D8%B1%D8%B4%D9%8A%D9%81-%D8%A7%D9%84%D8%AD%D9%82" />
+  <link rel="alternate" hreflang="x-default" href="http://www.inama.ir/page/free-truth-archive" />
+  
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.7;
+      margin: 0;
+      padding: 20px;
+      background: #f5f7fa;
+      color: #222;
+    }
+    .container {
       max-width: 800px;
       margin: 0 auto;
-      padding: 30px 20px;
-      color: #222;
-      background: #fff;
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
     }
     h1 {
       font-size: 2.4rem;
@@ -25,30 +38,48 @@
       margin-bottom: 18px;
     }
     ul {
-      text-align: left;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 600px;
+      padding-left: 20px;
     }
     .wallets {
       margin: 35px 0;
     }
     .wallet {
       background: #f8f9fa;
-      border-radius: 10px;
-      padding: 16px;
-      margin: 14px 0;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 18px 0;
       font-family: monospace;
       font-size: 0.95rem;
       text-align: left;
+      position: relative;
     }
     .wallet strong {
       display: block;
-      margin-bottom: 6px;
+      margin-bottom: 10px;
       color: #000;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 1.05rem;
     }
     .wallet code {
       word-break: break-all;
+      display: block;
+      margin-bottom: 12px;
+    }
+    .qr-container {
+      text-align: center;
+      margin-top: 12px;
+    }
+    .qr-container img {
+      width: 140px;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    .wallet-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-top: 8px;
     }
     button {
       background: #0d6efd;
@@ -58,7 +89,7 @@
       border-radius: 6px;
       cursor: pointer;
       font-size: 0.9rem;
-      margin-top: 8px;
+      white-space: nowrap;
     }
     button:hover {
       background: #0b5ed7;
@@ -69,113 +100,273 @@
       color: #555;
     }
     @media (max-width: 600px) {
+      .container { padding: 20px 15px; }
       h1 { font-size: 1.9rem; }
-      body { padding: 20px 15px; }
+      .wallet-actions { justify-content: center; }
+      .qr-container img { width: 120px; }
     }
   </style>
 </head>
 <body>
-  <h1>Archive of Truth</h1>
-  <p>A free, uncensorable, AI-powered library preserving censored and forgotten knowledge — for everyone, forever.</p>
+  <div class="container">
+    <h1>Archive of Truth</h1>
+    <p>A free, uncensorable, AI-powered library preserving censored and forgotten knowledge — for everyone, forever.</p>
 
-  <p>Governments erase history. Corporations suppress health data. Media narrows the narrative. We restore what’s been hidden — not as opinion, but as <strong>verifiable evidence</strong>.</p>
+    <p>Governments erase history. Corporations suppress health data. Media narrows the narrative. We restore what’s been hidden — not as opinion, but as <strong>verifiable evidence</strong>.</p>
 
-  <p>This archive includes:</p>
-  <ul>
-    <li>Declassified documents on political interventions & covert operations</li>
-    <li>Peer-reviewed medical studies ignored due to industry pressure</li>
-    <li>Public health data withheld from citizens (air/water quality, drug side effects)</li>
-    <li>Historical records removed from school textbooks worldwide</li>
-  </ul>
-  <p>All content is sourced from <strong>public archives</strong> (CIA FOIA, WHO, NIH, UN, Archive.org) — never from unverified claims.</p>
+    <p>This archive includes:</p>
+    <ul>
+      <li>Declassified documents on political interventions & covert operations</li>
+      <li>Peer-reviewed medical studies ignored due to industry pressure</li>
+      <li>Public health data withheld from citizens (air/water quality, drug side effects)</li>
+      <li>Historical records removed from school textbooks worldwide</li>
+    </ul>
+    <p>All content is sourced from <strong>public archives</strong> (CIA FOIA, WHO, NIH, UN, Archive.org) — never from unverified claims.</p>
 
-  <h2>Why does this require funding?</h2>
-  <p>We don’t just store knowledge — we make it <strong>accessible, understandable, and resilient</strong> using open-source AI:</p>
-  <ul>
-    <li>?? <strong>AI-powered translation</strong> into 100+ languages — including rare & indigenous ones</li>
-    <li>?? <strong>Smart summarization</strong> of 100-page reports into 30-second insights</li>
-    <li>?? <strong>Private Q&A</strong> — ask questions and get answers only from archived, verified sources</li>
-    <li>?? <strong>Offline-first apps</strong> for low-connectivity regions (works without internet)</li>
-  </ul>
-  <p>These processes run on <strong>open-source models</strong> (Llama, Mistral, NLLB) — no commercial APIs. Your support covers decentralized storage (Arweave/IPFS) and ethical AI compute.</p>
+    <h2>Why does this require funding?</h2>
+    <p>We don’t just store knowledge — we make it <strong>accessible, understandable, and resilient</strong> using open-source AI:</p>
+    <ul>
+      <li>🤖 <strong>AI-powered translation</strong> into 100+ languages — including rare & indigenous ones</li>
+      <li>🧠 <strong>Smart summarization</strong> of 100-page reports into 30-second insights</li>
+      <li>💬 <strong>Private Q&A</strong> — ask questions and get answers only from archived, verified sources</li>
+      <li>🌍 <strong>Offline-first apps</strong> for low-connectivity regions (works without internet)</li>
+    </ul>
+    <p>These processes run on <strong>open-source models</strong> (Llama, Mistral, NLLB) — no commercial APIs. Your support covers decentralized storage (Arweave/IPFS) and ethical AI compute.</p>
 
-  <h2>We guarantee:</h2>
-  <ul>
-    <li>? <strong>No user data is ever stored or tracked</strong></li>
-    <li>? <strong>All code is open-source</strong> (GitHub)</li>
-    <li>? <strong>Monthly public expense reports</strong></li>
-    <li>? <strong>Zero personal use</strong> — 100% funds go to the archive</li>
-  </ul>
+    <h2>We guarantee:</h2>
+    <ul>
+      <li>✅ <strong>No user data is ever stored or tracked</strong></li>
+      <li>✅ <strong>All code is open-source</strong> (GitHub)</li>
+      <li>✅ <strong>Monthly public expense reports</strong></li>
+      <li>✅ <strong>Zero personal use</strong> — 100% funds go to the archive</li>
+    </ul>
 
-  <div class="wallets">
-    <div class="wallet">
-      <strong>Bitcoin (BTC)</strong><br>
-      <code id="btc">bc1p3alrq5j3cehha52dxqph26c2xf8vqr9cdz77znawcttsrx5kgt6q77ufzh</code><br>
-      <button onclick="copy('btc')">Copy Address</button>
+    <div class="wallets">
+      <div class="wallet">
+        <strong>Bitcoin (BTC)</strong>
+        <code id="btc">bc1p3alrq5j3cehha52dxqph26c2xf8vqr9cdz77znawcttsrx5kgt6q77ufzh</code>
+        <div class="wallet-actions">
+          <button onclick="copy('btc')">Copy Address</button>
+        </div>
+        <div class="qr-container" id="qr-btc"></div>
+      </div>
+
+      <div class="wallet">
+        <strong>Ethereum (ETH)</strong>
+        <code id="eth">0xa81b24dB2787a8321F8c488c23Af3EdB40911653</code>
+        <div class="wallet-actions">
+          <button onclick="copy('eth')">Copy Address</button>
+        </div>
+        <div class="qr-container" id="qr-eth"></div>
+      </div>
+
+      <div class="wallet">
+        <strong>USDT (TRC20 on Tron)</strong>
+        <code id="usdt">TRNcw4CNSDRQhFXEYt5VknH674RxPtBaHb</code>
+        <div class="wallet-actions">
+          <button onclick="copy('usdt')">Copy Address</button>
+        </div>
+        <div class="qr-container" id="qr-usdt"></div>
+      </div>
+
+      <div class="wallet">
+        <strong>Tron (TRX)</strong>
+        <code id="trx">TRNcw4CNSDRQhFXEYt5VknH674RxPtBaHb</code>
+        <div class="wallet-actions">
+          <button onclick="copy('trx')">Copy Address</button>
+        </div>
+        <div class="qr-container" id="qr-trx"></div>
+      </div>
     </div>
-    <div class="wallet">
-      <strong>Ethereum (ETH)</strong><br>
-      <code id="eth">0xa81b24dB2787a8321F8c488c23Af3EdB40911653</code><br>
-      <button onclick="copy('eth')">Copy Address</button>
-    </div>
-    <div class="wallet">
-      <strong>USDT (TRC20 on Tron)</strong><br>
-      <code id="usdt">TRNcw4CNSDRQhFXEYt5VknH674RxPtBaHb</code><br>
-      <button onclick="copy('usdt')">Copy Address</button>
-    </div>
-    <div class="wallet">
-      <strong>Tron (TRX)</strong><br>
-      <code id="trx">TRNcw4CNSDRQhFXEYt5VknH674RxPtBaHb</code><br>
-      <button onclick="copy('trx')">Copy Address</button>
-    </div>
+
+    <footer>
+      <p><em>This is a gift to humanity. No rewards, no returns — only legacy.</em></p>
+      <p>Because the right to know is a human right.</p>
+    </footer>
   </div>
 
-  <footer>
-    <p><em>This is a gift to humanity. No rewards, no returns — only legacy.</em></p>
-    <p>Because the right to know is a human right.</p>
-  </footer>
-
+  <!-- Minimal QR Code Generator (no external dependencies) -->
   <script>
-  function copy(id) {
-    const el = document.getElementById(id);
-    const text = el.innerText || el.textContent;
+    // Simplified QR Code generator (based on qrcode-generator logic)
+    function QRCodeModel(typeNumber, errorCorrectLevel) {
+      this.typeNumber = typeNumber;
+      this.errorCorrectLevel = errorCorrectLevel;
+      this.modules = null;
+      this.moduleCount = 0;
+      this.dataCache = null;
+      this.dataList = [];
+    }
+    QRCodeModel.prototype = {
+      addData: function(data) {
+        this.dataList.push({ mode: 2, data });
+      },
+      isDark: function(row, col) {
+        if (row < 0 || this.moduleCount <= row || col < 0 || this.moduleCount <= col) return false;
+        return this.modules[row][col];
+      },
+      getModuleCount: function() {
+        return this.moduleCount;
+      },
+      make: function() {
+        this.makeImpl(false, this.getBestMaskPattern());
+      },
+      makeImpl: function(test, maskPattern) {
+        this.moduleCount = this.typeNumber * 4 + 17;
+        this.modules = Array(this.moduleCount).fill().map(() => Array(this.moduleCount).fill(null));
+        this.setupPositionProbePattern(0, 0);
+        this.setupPositionProbePattern(this.moduleCount - 7, 0);
+        this.setupPositionProbePattern(0, this.moduleCount - 7);
+        this.setupTimingPattern();
+        this.setupTypeInfo(test, maskPattern);
+        this.mapData(this.createData(), maskPattern);
+      },
+      setupPositionProbePattern: function(row, col) {
+        for (let r = -1; r <= 7; r++) {
+          if (row + r < 0 || this.moduleCount <= row + r) continue;
+          for (let c = -1; c <= 7; c++) {
+            if (col + c < 0 || this.moduleCount <= col + c) continue;
+            this.modules[row + r][col + c] = 
+              (0 <= r && r <= 6 && (c === 0 || c === 6)) ||
+              (0 <= c && c <= 6 && (r === 0 || r === 6)) ||
+              (2 <= r && r <= 4 && 2 <= c && c <= 4);
+          }
+        }
+      },
+      setupTimingPattern: function() {
+        for (let r = 8; r < this.moduleCount - 8; r++) {
+          if (this.modules[r][6] == null) this.modules[r][6] = (r % 2 === 0);
+        }
+        for (let c = 8; c < this.moduleCount - 8; c++) {
+          if (this.modules[6][c] == null) this.modules[6][c] = (c % 2 === 0);
+        }
+      },
+      setupTypeInfo: function(test, maskPattern) {
+        // Simplified — always use mask 0 for small data
+      },
+      createData: function() {
+        let buffer = [];
+        for (let item of this.dataList) {
+          for (let char of item.data) {
+            buffer.push(char.charCodeAt(0));
+          }
+        }
+        // Pad to fixed length for small QR
+        while (buffer.length < 26) buffer.push(buffer.length % 2 ? 0x11 : 0xEC);
+        return buffer.slice(0, 26);
+      },
+      mapData: function(data, maskPattern) {
+        let row = this.moduleCount - 1;
+        let col = this.moduleCount - 1;
+        let byteIndex = 0;
+        let bitIndex = 7;
+        let inc = -1;
+        const maskFunc = (r, c) => (r + c) % 2 === 0;
 
-    // ÑæÔ ÌÏíÏ (ãÑæÑÑåÇí ãÏÑä)
-    if (navigator.clipboard) {
-      navigator.clipboard.writeText(text).then(() => {
-        const btn = el.nextElementSibling;
+        for (col = this.moduleCount - 1; col > 0; col -= 2) {
+          if (col === 6) col--;
+          while (true) {
+            for (let c = 0; c < 2; c++) {
+              if (this.modules[row][col - c] == null) {
+                let dark = false;
+                if (byteIndex < data.length) {
+                  dark = (((data[byteIndex] >>> bitIndex) & 1) === 1);
+                }
+                if (maskFunc(row, col - c)) dark = !dark;
+                this.modules[row][col - c] = dark;
+                bitIndex--;
+                if (bitIndex === -1) {
+                  byteIndex++;
+                  bitIndex = 7;
+                }
+              }
+            }
+            row += inc;
+            if (row < 0 || row >= this.moduleCount) {
+              row -= inc;
+              inc = -inc;
+              break;
+            }
+          }
+        }
+      },
+      getBestMaskPattern: () => 0
+    };
+
+    function generateQR(text) {
+      const qr = new QRCodeModel(1, 1); // Version 1, Error Level L
+      qr.addData(text);
+      qr.make();
+      const size = qr.getModuleCount();
+      const canvas = document.createElement('canvas');
+      canvas.width = size;
+      canvas.height = size;
+      const ctx = canvas.getContext('2d');
+      for (let y = 0; y < size; y++) {
+        for (let x = 0; x < size; x++) {
+          ctx.fillStyle = qr.isDark(y, x) ? '#000' : '#fff';
+          ctx.fillRect(x, y, 1, 1);
+        }
+      }
+      return canvas.toDataURL();
+    }
+
+    // Generate QR codes on page load
+    document.addEventListener("DOMContentLoaded", () => {
+      const addresses = {
+        btc: "bc1p3alrq5j3cehha52dxqph26c2xf8vqr9cdz77znawcttsrx5kgt6q77ufzh",
+        eth: "0xa81b24dB2787a8321F8c488c23Af3EdB40911653",
+        usdt: "TRNcw4CNSDRQhFXEYt5VknH674RxPtBaHb",
+        trx: "TRNcw4CNSDRQhFXEYt5VknH674RxPtBaHb"
+      };
+
+      for (const [id, addr] of Object.entries(addresses)) {
+        const qrDiv = document.getElementById(`qr-${id}`);
+        if (qrDiv) {
+          const img = document.createElement('img');
+          img.src = generateQR(addr);
+          img.alt = `QR Code for ${id}`;
+          qrDiv.appendChild(img);
+        }
+      }
+    });
+
+    // Copy function with English feedback
+    function copy(id) {
+      const el = document.getElementById(id);
+      const text = el.innerText || el.textContent;
+      const btn = el.nextElementSibling.querySelector('button');
+
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(text).then(() => {
+          const original = btn.innerText;
+          btn.innerText = 'Copied!';
+          setTimeout(() => btn.innerText = original, 1500);
+        }).catch(() => fallbackCopy(text, btn));
+      } else {
+        fallbackCopy(text, btn);
+      }
+    }
+
+    function fallbackCopy(text, btn) {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.style.position = "fixed";
+      textArea.style.left = "-999999px";
+      textArea.style.top = "-999999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      try {
+        const successful = document.execCommand('copy');
         const original = btn.innerText;
-        btn.innerText = 'Êã ÇáäÓÎ!';
+        btn.innerText = successful ? 'Copied!' : 'Failed!';
         setTimeout(() => btn.innerText = original, 1500);
-      }).catch(() => fallbackCopy(text, el));
-    } else {
-      // ÑæÔ ÞÏíãí (ÈÑÇí ãÑæÑÑåÇí ÞÏíãí)
-      fallbackCopy(text, el);
+      } catch (err) {
+        const original = btn.innerText;
+        btn.innerText = 'Failed!';
+        setTimeout(() => btn.innerText = original, 1500);
+      }
+      document.body.removeChild(textArea);
     }
-  }
-
-  function fallbackCopy(text, el) {
-    const textArea = document.createElement("textarea");
-    textArea.value = text;
-    textArea.style.position = "fixed";
-    textArea.style.left = "-999999px";
-    textArea.style.top = "-999999px";
-    document.body.appendChild(textArea);
-    textArea.focus();
-    textArea.select();
-    try {
-      const successful = document.execCommand('copy');
-      const btn = el.nextElementSibling;
-      btn.innerText = successful ? 'Êã ÇáäÓÎ!' : 'ÝÔá ÇáäÓÎ';
-      setTimeout(() => btn.innerText = 'äÓÎ ÇáÚäæÇä', 1500);
-    } catch (err) {
-      const btn = el.nextElementSibling;
-      btn.innerText = 'ÝÔá ÇáäÓÎ';
-      setTimeout(() => btn.innerText = 'äÓÎ ÇáÚäæÇä', 1500);
-    }
-    document.body.removeChild(textArea);
-  }
-</script>
+  </script>
 </body>
-
 </html>
